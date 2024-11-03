@@ -1,0 +1,58 @@
+POST localhost:8080/user
+Content-Type: application/json
+
+{
+  "name": "Test",
+  "username": "test",
+  "password": "test"
+}
+
+###
+
+GET localhost:8080/user
+
+###
+
+GET localhost:8080/user/1
+
+###
+
+GET localhost:8080/user/u/test
+
+###
+
+GET localhost:8080/user/name/Test?page=2
+
+###
+
+PUT localhost:8080/user/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "New",
+  "username": "new",
+  "password": "new"
+}
+
+###
+
+DELETE localhost:8080/user/1
+
+###
+
+POST localhost:8080/post
+Content-Type: application/json
+
+{
+  "title": "Test",
+  "description": "Test",
+  "author": {
+    "id": 3,
+    "name": "Test",
+    "username": "test",
+    "password": "test"
+  }
+}
+
+###
